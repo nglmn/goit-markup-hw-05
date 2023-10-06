@@ -641,32 +641,19 @@
 								required
 							/>
 						</label>
-						<button type="submit" class="submit-btn">
+						<button type="submit" class="footer-submit-btn">
 							Subscribe
-							<span>
-								<svg
-									class="submit-btn-icon"
-									width="24"
-									height="20"
-								>
-									<use
-										href="./images/icons.svg#icon-send"
-									></use>
-								</svg>
-							</span>
+							<svg class="submit-btn-icon" width="24" height="24">
+								<use href="./images/icons.svg#icon-send"></use>
+							</svg>
 						</button>
 					</form>
 				</div>
 			</div>
 		</footer>
-		<div class="backdrop is-open">
+		<div class="backdrop is-close">
 			<div class="modal">
-				<button
-					class="modal-close-btn"
-					type="button"
-					width="24"
-					height="24"
-				>
+				<button class="modal-close-btn" type="button">
 					<svg class="modal-close-icon" width="8" height="8">
 						<use href="./images/icons.svg#icon-close"></use>
 					</svg>
@@ -695,7 +682,7 @@
 							<svg
 								class="modal-input-icon"
 								width="18"
-								height="18"
+								height="24"
 							>
 								<use
 									href="./images/icons.svg#icon-person"
@@ -718,7 +705,7 @@
 							<svg
 								class="modal-input-icon"
 								width="18"
-								height="18"
+								height="24"
 							>
 								<use href="./images/icons.svg#icon-phone"></use>
 							</svg>
@@ -739,19 +726,19 @@
 							<svg
 								class="modal-input-icon"
 								width="18"
-								height="18"
+								height="24"
 							>
 								<use href="./images/icons.svg#icon-email"></use>
 							</svg>
 						</div>
 					</div>
 					<div class="modal-text-area">
-						<label for="user-text" class="modal-input-label"
+						<label for="user-comment" class="modal-input-label"
 							>Comment</label
 						>
 						<textarea
-							id="user-text"
-							name="user-text"
+							id="user-comment"
+							name="user-comment"
 							class="textarea-field"
 							placeholder="Text input"
 						></textarea>
@@ -759,23 +746,26 @@
 					<div class="modal-check-box">
 						<input
 							type="checkbox"
-							name="user-checkbox"
+							name="user-privacy"
 							class="modal-checkbox visually-hidden"
-							id="modal-checkbox"
+							id="modal-privacy"
 							required
+							value="true"
 						/>
-						<label for="modal-checkbox" class="modal-checkbox-label"
+						<label for="modal-privacy" class="modal-checkbox-label"
 							><span class="modal-checkbox-custom"
 								><svg
 									class="modal-checkbox-icon"
 									width="10"
-									height="10"
+									height="8"
 								>
 									<use
 										href="./images/icons.svg#icon-done"
 									></use></svg></span
 							>I accept the terms and conditions of the
-							<a href="">Privacy Policy</a></label
+							<a href="" class="input-privacy-link"
+								>Privacy Policy</a
+							></label
 						>
 					</div>
 					<button type="submit" class="modal-submit-btn">Send</button>
