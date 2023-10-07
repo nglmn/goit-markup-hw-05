@@ -515,6 +515,15 @@ ul, ol{
     /* 200% */
     letter-spacing: 0.04em;
 }
+.footer-input-email::placeholder{
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    /* 200% */
+    letter-spacing: 0.04em;
+}
 .footer-submit-btn{
     min-width: 165px;
     height: 40px;
@@ -594,10 +603,10 @@ ul, ol{
     align-items: center;
     width: 24px;
     height: 24px;
-    color: #2E2F42;
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2E2F42;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     right: 24px;
     top: 24px;
 }
@@ -627,11 +636,10 @@ ul, ol{
 
 .modal-input-item{
     width: 100%;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 8px
 }
 .modal-input-label{
+    display: block;
     color:  #8E8F99;
     font-size: 12px;
     font-style: normal;
@@ -661,7 +669,7 @@ ul, ol{
     left: 16px;
     width: 18px;
     height: 24px;
-    color: #2E2F42;
+    fill: #2E2F42;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -678,10 +686,6 @@ ul, ol{
     fill: #4D5AE5;
 } */
 .modal-text-area{
-    display: flex;
-    gap: 4px;
-    flex-direction: column;
-    margin-top: 8px;
     margin-bottom: 16px;
 }
 .textarea-field{
@@ -741,7 +745,6 @@ ul, ol{
 }
 
 .modal-check-box{
-    margin-top: 16px;
     margin-bottom: 24px;
 }
 .modal-checkbox-label{
