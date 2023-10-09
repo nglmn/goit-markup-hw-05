@@ -781,8 +781,14 @@ ul, ol{
 .modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-custom{
     background-color: #404BBF;
     border: none;
-    fill: #F4F4FD;;
+    fill: #F4F4FD;
+    
 }
+
+
+
+
+
 
 
 
